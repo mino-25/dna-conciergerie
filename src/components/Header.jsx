@@ -6,7 +6,7 @@ export default function Header() {
       <nav className="flex justify-between items-center max-w-7xl mx-auto px-6 py-6">
         {/* Logo */}
         <Link to="/" className="text-white text-3xl font-bold tracking-tight">
-          MonLogo
+          DNA
         </Link>
 
         {/* Menu */}
