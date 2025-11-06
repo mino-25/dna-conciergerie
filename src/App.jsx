@@ -12,7 +12,7 @@ export default function App() {
 
   return (
     <Router>
-      <div className="flex flex-col min-h-screen pt-28">
+      <div className="flex flex-col min-h-screen">
         <Header />
         <main className="flex-grow">
           <Routes>
