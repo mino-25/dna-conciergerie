@@ -11,9 +11,9 @@ export default {
         accent: '#f9da2dff',   
       },
       fontFamily: {
-        sans: ['"Open Sans"', 'sans-serif'],
+        sans: ['"League Spartan"', 'sans-serif'],
         body: ['"Open Sans"', 'serif'],
-        serif: ['"Abhaya Libre"', 'serif'],
+        title: ['"Abhaya Libre"', 'serif'],
       },
     },
   },

@@ -5,7 +5,7 @@ export default function Header() {
     <header className="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-black/20 shadow-2xl">
       <nav className="flex justify-between items-center max-w-7xl mx-auto px-6 py-6">
         {/* Logo */}
-        <Link to="/" className="text-white text-3xl font-bold tracking-tight">
+        <Link to="/" className="text-white text-3xl font-bold font-title tracking-tight">
           DNA
         </Link>
 
