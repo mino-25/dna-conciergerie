@@ -14,6 +14,7 @@ export default function Header() {
           <Link to="/" className="hover:text-gray-200 transition-colors">Accueil</Link>
           <Link to="/services" className="hover:text-gray-200 transition-colors">Services</Link>
           <Link to="/about" className="hover:text-gray-200 transition-colors">À propos</Link>
+          <Link to="/devis" className="hover:text-gray-200 transition-colors">Devis</Link>
           <Link to="/contact" className="hover:text-gray-200 transition-colors">Contact</Link>
         </div>
       </nav>
