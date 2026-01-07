@@ -18,7 +18,7 @@ export default function Contact(){
     }
 
     return(
-        <main className="max-w-3xl mx-auto px-6 py-20 mt-16">
+        <main className="max-w-3xl mx-auto px-6 py-20 mt-16np">
             <h1 className="text-3xl font-title mb-4">Contact</h1>
             <p className="text-gray-600 mb-6">Pour toute question ou demande, écrivez-nous ci‑dessous ou contactez-nous par téléphone.</p>
 
