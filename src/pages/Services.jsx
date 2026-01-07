@@ -1,6 +1,6 @@
 export default function Services(){
     return(
-        <main className="max-w-6xl mx-auto px-6 py-20">
+        <main className="max-w-6xl mx-auto px-6 py-20 mt-16">
             <header className="text-center mb-12">
                 <h1 className="text-4xl font-title mb-3">Nos services pour hôtes</h1>
                 <p className="text-gray-600 max-w-2xl mx-auto">Solutions complètes pour propriétaires de locations courte durée : mise en place, gestion opérationnelle, optimisation des revenus et service invité premium.</p>

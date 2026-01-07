@@ -1,6 +1,6 @@
 export default function About(){
     return(
-        <main className="max-w-4xl mx-auto px-6 py-20 text-gray-800">
+        <main className="max-w-4xl mx-auto px-6 py-20 text-gray-800 mt-16">
             <h1 className="text-4xl font-title mb-4">À propos de DNA Conciergerie</h1>
             <p className="mb-6">Nous sommes une conciergerie spécialisée dans la gestion de locations courte durée (Airbnb, Booking, etc.). Notre mission : permettre aux propriétaires de profiter des revenus locatifs sans les contraintes opérationnelles.</p>
 

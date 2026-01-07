@@ -17,7 +17,7 @@ export default function Header() {
   }, []);
 
   const solid = !isHome || scrolled;
-  const headerBg = solid ? "backdrop-blur-md bg-white/90 shadow-2xl border-b border-gray-200" : "bg-transparent shadow-none";
+  const headerBg = solid ? "backdrop-blur-md bg-white/90 shadow-xl border-b border-gray-200" : "bg-transparent shadow-none";
   const linkColor = solid ? "text-gray-900" : "text-white";
   const linkHover = solid ? "hover:text-gray-700" : "hover:text-gray-200";
 

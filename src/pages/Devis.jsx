@@ -51,7 +51,7 @@ export default function Devis() {
   };
 
   return (
-    <section className="min-h-screen py-24 bg-[url('../assets/hero-cover.jpg')] bg-cover bg-center text-white">
+    <section className="min-h-screen py-24 mt-16 bg-gradient-to-b from-black via-gray-900 to-black text-white">
       <div className="max-w-4xl mx-auto px-6">
         <div className="text-center mb-10">
           <h1 className="text-4xl font-title mb-2">Demander un devis pour votre bien</h1>
