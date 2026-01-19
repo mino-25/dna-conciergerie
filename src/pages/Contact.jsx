@@ -49,7 +49,7 @@ export default function Contact(){
 
                 <div className="flex items-center gap-4">
                     <button className="px-6 py-2 bg-black text-white rounded">Envoyer</button>
-                    {sent && <span className="text-green-500">✅ Message envoyé, nous vous répondrons bientôt.</span>}
+                    {sent && <span className="text-green-500">Message envoyé, nous vous répondrons bientôt.</span>}
                 </div>
             </form>
         </main>

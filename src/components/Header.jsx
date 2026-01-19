@@ -1,10 +1,16 @@
 import { Link, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { m } from "framer-motion";
 
 export default function Header() {
   const location = useLocation();
   const isHome = location.pathname === "/";
   const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
 
   useEffect(() => {
     function onScroll() {
@@ -29,13 +35,26 @@ export default function Header() {
           DNA
         </Link>
 
+        {/* Toggle Button */}
+        <button onClick={toggleMenu} className="md:hidden">
+          <svg className={`w-6 h-6 ${menuOpen ? "hidden" : "block"}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M4 6h16M4 12h16M4 18h16" className={linkColor} />
+          </svg>
+        </button>
+        {/* Close Toggle Button */}
+        <button onClick={toggleMenu} className="md:hidden">
+          <svg className={`w-6 h-6 ${menuOpen ? "block" : "hidden"}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M6 18L18 6M6 6l12 12" className={linkColor} />
+          </svg>
+        </button>
+
         {/* Menu */}
-        <div className={`flex gap-6 text-lg font-medium ${linkColor}`}>
-          <Link to="/" className={`${linkHover} transition-colors`}>Accueil</Link>
-          <Link to="/services" className={`${linkHover} transition-colors`}>Services</Link>
-          <Link to="/about" className={`${linkHover} transition-colors`}>À propos</Link>
-          <Link to="/devis" className={`${linkHover} transition-colors`}>Devis</Link>
-          <Link to="/contact" className={`${linkHover} transition-colors`}>Contact</Link>
+        <div className={`absolute top-full left-0 w-full bg-white shadow-xl md:shadow-none md:relative md:top-auto md:w-auto md:bg-transparent flex flex-col md:flex-row gap-6 text-lg font-medium ${linkColor} md:flex ${menuOpen ? "flex" : "hidden"} md:!flex p-6 md:p-0`}>
+          <Link to="/" onClick={() => setMenuOpen(false)} className={`${linkHover} transition-colors`}>Accueil</Link>
+          <Link to="/services" onClick={() => setMenuOpen(false)} className={`${linkHover} transition-colors`}>Services</Link>
+          <Link to="/about" onClick={() => setMenuOpen(false)} className={`${linkHover} transition-colors`}>À propos</Link>
+          <Link to="/devis" onClick={() => setMenuOpen(false)} className={`${linkHover} transition-colors`}>Devis</Link>
+          <Link to="/contact" onClick={() => setMenuOpen(false)} className={`${linkHover} transition-colors`}>Contact</Link>
         </div>
       </nav>
     </header>
