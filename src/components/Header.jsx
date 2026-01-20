@@ -49,7 +49,7 @@ export default function Header() {
         </button>
 
         {/* Menu */}
-        <div className={`absolute top-full left-0 w-full bg-white shadow-xl md:shadow-none md:relative md:top-auto md:w-auto md:bg-transparent flex flex-col md:flex-row gap-6 text-lg font-medium ${linkColor} md:flex ${menuOpen ? "flex" : "hidden"} md:!flex p-6 md:p-0`}>
+        <div className={`absolute top-full left-0 w-full shadow-xl md:shadow-none md:relative md:top-auto md:w-auto md:bg-transparent flex flex-col md:flex-row gap-6 text-lg font-medium ${linkColor} md:flex ${menuOpen ? "flex" : "hidden"} md:!flex p-6 md:p-0`}>
           <Link to="/" onClick={() => setMenuOpen(false)} className={`${linkHover} transition-colors`}>Accueil</Link>
           <Link to="/services" onClick={() => setMenuOpen(false)} className={`${linkHover} transition-colors`}>Services</Link>
           <Link to="/about" onClick={() => setMenuOpen(false)} className={`${linkHover} transition-colors`}>À propos</Link>
