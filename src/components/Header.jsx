@@ -23,7 +23,8 @@ export default function Header() {
   }, []);
 
   const solid = !isHome || scrolled;
-  const headerBg = solid ? "backdrop-blur-md bg-white/90 shadow-xl border-b border-gray-200" : "bg-transparent shadow-none";
+  const headerBg = solid ? "backdrop-blur-md bg-white shadow-xl border-b border-gray-200" : "bg-transparent shadow-none";
+  const navBg = solid ? "backdrop-blur-md bg-white" : "bg-transparent shadow-none md:bg-transparent";
   const linkColor = solid ? "text-gray-900" : "text-white";
 
   return (
@@ -35,7 +36,7 @@ export default function Header() {
         </Link>
 
         {/* Menu */}
-        <div className={`absolute top-full left-0 w-full shadow-xl md:shadow-none md:relative md:top-auto md:w-auto flex flex-col md:flex-row gap-6 text-lg font-medium ${headerBg} transition-colors duration-300 md:flex ${menuOpen ? "flex" : "hidden"} md:!flex p-6 md:p-0`}>
+        <div className={`absolute top-full left-0 w-full shadow-xl md:shadow-none md:relative md:top-auto md:w-auto flex flex-col md:flex-row gap-6 text-lg font-medium ${navBg} transition-colors duration-300 md:flex ${menuOpen ? "flex" : "hidden"} md:!flex p-6 md:p-0`}>
           <Link to="/" onClick={() => setMenuOpen(false)} className={`${linkColor} transition-colors`}>Accueil</Link>
           <Link to="/services" onClick={() => setMenuOpen(false)} className={`${linkColor} transition-colors`}>Services</Link>
           <Link to="/about" onClick={() => setMenuOpen(false)} className={`${linkColor} transition-colors`}>À propos</Link>

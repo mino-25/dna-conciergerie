@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import cover from "../assets/hero-cover.jpg";
+import shakeHands from "../assets/men-shake-hands.jpg";
 
 export default function Home() {
   return (
@@ -111,7 +112,7 @@ export default function Home() {
 
             <div>
               {/* MEDIA: Team photo (JPEG) or field service image - recommend 1200x800 */}
-              <div className="aspect-video bg-black/10 rounded-lg flex items-center justify-center">Équipe sur le terrain (photo)</div>
+              <div className="aspect-video bg-black/10 rounded-lg flex items-center justify-center"><img src={shakeHands} alt="Équipe sur le terrain" className="rounded" /></div>
             </div>
           </div>
         </div>
@@ -144,7 +145,7 @@ export default function Home() {
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="text-3xl font-title mb-6">Ce que disent nos hôtes</h2>
           <blockquote className="italic text-gray-700">"Grâce à DNA, mon appartement est plein toute l'année et la gestion quotidienne ne me prend plus de temps."</blockquote>
-          <p className="mt-4 text-sm text-gray-500">— Amélie, propriétaire à Paris</p>
+          <p className="mt-4 text-sm text-gray-500">— Amine, partenaire en région Parisienne</p>
 
           <div className="mt-8 flex justify-center gap-6">
             {/* MEDIA: Client Logo 1 (SVG) */}
